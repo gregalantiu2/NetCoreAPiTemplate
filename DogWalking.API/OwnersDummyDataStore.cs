@@ -19,14 +19,14 @@ namespace DogWalking.API
                     OwnerID = 1,
                     FirstName = "Greg",
                     LastName = "Tiu",
-                    OwnerDogs = OwnerDogDummyDataStore.Current.OwnerDogs
+                    OwnerDogs = OwnersDogsDummyDataStore.Current.OwnerDogs
                 },
                 new Owner()
                 {
                     OwnerID = 2,
                     FirstName = "Emmanuel",
                     LastName = "Ruvalcaba",
-                    OwnerDogs = OwnerDogDummyDataStore.Current.OwnerDogs
+                    OwnerDogs = OwnersDogsDummyDataStore.Current.OwnerDogs
                 }
             };
         }

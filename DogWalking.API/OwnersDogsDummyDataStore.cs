@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DogWalking.API
 {
-    public class OwnerDogDummyDataStore
+    public class OwnersDogsDummyDataStore
     {
-        public static OwnerDogDummyDataStore Current { get; } = new OwnerDogDummyDataStore();
+        public static OwnersDogsDummyDataStore Current { get; } = new OwnersDogsDummyDataStore();
         public List<OwnerDog> OwnerDogs { get; set; }
-        public OwnerDogDummyDataStore()
+        public OwnersDogsDummyDataStore()
         {
             OwnerDogs = new List<OwnerDog>()
             {

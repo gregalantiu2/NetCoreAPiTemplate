@@ -18,19 +18,19 @@ namespace DogWalking.API
                 {
                     DogID = 1,
                     Name = "Libby",
-                    OwnerDogs = OwnerDogDummyDataStore.Current.OwnerDogs
+                    OwnerDogs = OwnersDogsDummyDataStore.Current.OwnerDogs
                 },
                 new Dog()
                 {
                     DogID = 2,
                     Name = "Lobo",
-                    OwnerDogs = OwnerDogDummyDataStore.Current.OwnerDogs
+                    OwnerDogs = OwnersDogsDummyDataStore.Current.OwnerDogs
                 },
                 new Dog()
                 {
                     DogID = 3,
                     Name = "Harlan",
-                    OwnerDogs = OwnerDogDummyDataStore.Current.OwnerDogs
+                    OwnerDogs = OwnersDogsDummyDataStore.Current.OwnerDogs
                 }
             };
         }
