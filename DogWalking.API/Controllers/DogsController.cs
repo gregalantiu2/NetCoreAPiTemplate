@@ -11,14 +11,24 @@ namespace DogWalking.API.Controllers
     public class DogsController : ControllerBase
     {
         [HttpGet]
-        public JsonResult GetDogs()
+        public IActionResult GetDogs()
         {
-            return new JsonResult(DogsDummyDataStore.Current.Dogs);
+            //200
+            return Ok(DogsDummyDataStore.Current.Dogs);
         }
         [HttpGet("{id}")]
-        public JsonResult GetDog(int id)
+        public IActionResult GetDog(int id)
         {
-            return new JsonResult(DogsDummyDataStore.Current.Dogs.FirstOrDefault(d => d.ID == id));
+            var dogReturn = DogsDummyDataStore.Current.Dogs.FirstOrDefault(d => d.DogID == id);
+
+            if (dogReturn == null)
+            {
+                //404
+                return NotFound();
+            }
+
+            //200
+            return Ok(dogReturn); 
         }
     }
 }

@@ -26,6 +26,7 @@ namespace DogWalking.API
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStatusCodePages(); 
             app.UseMvc();
         }
     }
