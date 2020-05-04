@@ -13,7 +13,7 @@ namespace DogWalking.API.Controllers
         [HttpGet]
         public IActionResult GetOwners()
         {
-            return Ok()
+            return Ok();
         }
     }
 }

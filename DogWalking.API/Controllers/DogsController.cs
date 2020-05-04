@@ -13,7 +13,6 @@ namespace DogWalking.API.Controllers
         [HttpGet]
         public IActionResult GetDogs()
         {
-            //200
             return Ok(DogsDummyDataStore.Current.Dogs);
         }
         [HttpGet("{id}")]
@@ -23,11 +22,10 @@ namespace DogWalking.API.Controllers
 
             if (dogReturn == null)
             {
-                //404
+                //return 404 if dogID does not exist
                 return NotFound();
             }
 
-            //200
             return Ok(dogReturn); 
         }
     }
